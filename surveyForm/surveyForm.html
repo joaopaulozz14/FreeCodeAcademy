@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form method="post" action="" id="survey-form">
+      <h1 id="title">Literature book survey</h1>
+      <p id="description">
+        Thank you for helping us learn more about your interests
+      </p>
+      <fieldset>
+        <legend>Personal informations</legend>
+        <label for="name" id="name-label"
+          >Name
+          <input id="name" type="text" required placeholder="Enter your name"
+        /></label>
+        <label for="email" id="email-label"
+          >Email
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+        /></label>
+        <label for="number" id="number-label"
+          >Age
+          <input
+            id="number"
+            type="number"
+            min="13"
+            max="120"
+            placeholder="Age"
+            required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>What type of book are you actually reading?</legend>
+        <label
+          ><input
+            type="radio"
+            name="category-books"
+            class="inline"
+            value="philosophy"
+            checked
+          />Philosophy</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="category-books"
+            class="inline"
+            value="literature"
+          />Literature</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="category-books"
+            class="inline"
+            value="history"
+          />History</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="category-books"
+            class="inline"
+            value="political"
+          />Political</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="category-books"
+            class="inline"
+            value="epic"
+          />Epic</label
+        >
+      </fieldset>
+      <fieldset class="break-field">
+        <legend>What's your favorite literature?</legend>
+        <div>
+          <label
+            ><input
+              type="checkbox"
+              class="inline"
+              value="english-literature"
+              checked
+            />English Literature</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="inline"
+              value="spanish-literature"
+            />Spanish Literature</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="inline"
+              value="italian-literature"
+            />Italian Literature</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="inline"
+              value="french-literature"
+            />French Literature</label
+          >
+        </div>
+        <div>
+          <label
+            ><input
+              type="checkbox"
+              class="inline"
+              value="brazilian-literature"
+            />Brazilian Literature</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="inline"
+              value="portuguese-literature"
+            />Portuguese Literature</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="inline"
+              value="russian-literature"
+            />Russian Literature</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="inline"
+              value="german-literature"
+            />German Literature</label
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose one of our recommendations</legend>
+        <select id="dropdown" name="dropdown" required>
+          <option value="">Choose one</option>
+          <option value="1">The Intelectual Life</option>
+          <option value="2">Ideas Have Consequences</option>
+          <option value="3">The Abolition of Man</option>
+          <option value="4">Orthodoxy</option>
+          <option value="5">What's Wrong With The World</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Comments</legend>
+        <textarea>
+Leave a comment about your favorites books, characters, styles...</textarea
+        >
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
